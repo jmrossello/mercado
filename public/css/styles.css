@@ -1,0 +1,358 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+    width: 100vw;
+    position:fixed;
+    top:0;
+    z-index: 1;/*para que el header quede por delante de los articulos*/
+}
+.secciones{
+    margin-top: 170px;
+}
+.main-header-top-bar{
+    display:flex;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 50%;
+}
+.search{
+    display:flex;
+    width: 50%;
+}
+
+.copy-header{
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    margin:auto;
+    margin-top: 5%;
+}
+.hamburger-button{
+    background-color: #03264C;
+    color: #ffffff;
+    display:block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;/*para centrar las rayas*/
+    font-size: 18px;
+    margin:auto;/*para centrar el boton*/
+    margin-top: 5%;
+}
+.main-navbar{
+    display: none;/*para ocultar toda la main-navbar*/
+    
+}
+.main-navbar ul{
+    list-style: none;/*Eliminar circulos de los items, indico que son los ul dentro de main-navbar*/
+    margin: 0;/*eliminar margenes a la izquierda*/
+    padding: 0;/*eliminar margenes a la izquierda*/
+}
+.main-navbar a{
+    text-decoration: none;
+    color:#222222 ;
+    display: inline-block;/*ya que todas las etiquetas a son inline y quiero agregar un padding arriba como abajo*/
+    padding: 5px 0;
+    font-size: 12px;
+}
+/*Estilos Main*/
+body{
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.parrafo{
+    font-size: 12px;
+}
+.titular{
+    font-size: 24px;
+    color:#666 ;
+}
+.precio{
+    display:flex;
+    flex-grow: 0.3;
+    font-size: 18px;
+}
+.descuento{
+    display:flex;
+    flex-grow: 0.7;
+    font-size: 16px;
+    color: #39b54a;
+}
+.descripcion{
+    display: none;
+    font-size: 16px;
+    color: #666;
+}
+.contenedorCamion{
+    position:relative;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 450 ms;
+}
+main section article i:hover{
+    transform: rotateZ(270deg);
+}
+.tamañoimagen{
+    width: 100%;
+    
+}
+main{
+    background-color: #ebebeb;
+    width: 90vw;
+    margin: auto;
+    
+}
+.logoEnvio{
+    color:#39b54a;
+}
+.contenedorDetalle{
+    display: flex;
+    border-top: solid 1px #ebebeb;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+}
+.contenedorDetalle p{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.interlineado{
+    line-height: 0.05;
+}
+article{
+    margin-bottom: 10px;
+}
+/*Estilo footer*/
+.footer{
+    background-color: #ebebeb;
+    padding-top: 5vh;
+    text-align:center;
+    margin:auto;
+    position:relative;
+    bottom: 0px;
+    
+    
+}
+
+
+.icono{
+    color:  #1259c3;
+    font-size:2rem;
+    margin-bottom: 10px;
+    width: 100px;
+    
+}
+
+/*Estilo formulario*/
+.create-form{
+    display:flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    width: 90vw;
+    text-align: center;
+    font-size: 12px;
+    margin:auto;
+    align-items:stretch;
+    justify-content: space-around;
+}
+.control-formulario{
+    margin-bottom: 15px;
+    width: 100%;
+}
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    font-size: 1rem;
+    display: block;
+}
+.strong{
+    font-weight: bold;
+}
+.control{
+    width:60vw;
+}
+
+.boton-formulario{
+    
+    background-color: #1259c3;
+    border: none;
+    font-size: 20px;
+    color:#ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 138px;
+    max-width: 280 px;
+    margin-top: 2%;
+}
+.boton-login{
+    
+    background-color: #1259c3;
+    border: none;
+    font-size: 20px;
+    color:#ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 138px;
+    max-width: 280 px;
+    margin-top: 2%;
+    transition: all 450 ms;
+}
+.boton-login:hover{
+    background-color: #0022AA;
+}
+
+@media (max-width:361px){
+.interes{
+    display:block;
+    padding: 20px 15px;
+    width: 50vw;
+    text-align: center;
+    font-size: 12px;
+    
+    
+}
+}
+@media (min-width:361px){
+    .main-header{
+       
+        font-size: 12px;
+    }
+    .logo{
+        width:30%;
+    }
+    .search{
+        align-items: center;
+        
+    }
+    .main-header-top-bar{
+        
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        
+    }.copy-header{
+        max-width: 350px;
+        margin:auto;
+        
+    }
+    .hamburger-button{
+        display: none;
+    }
+    .main-navbar{
+        
+        display: flex;
+        justify-content: space-between;
+        max-width: 100vw;
+        
+    }
+    .main-navbar ul {
+        display: flex;
+        max-width: 50%;
+        justify-content: space-between;
+    }
+    .main-navbar li {
+        margin: 0 0.8px;
+        font-size: 10%;
+        
+        
+    }
+    .descripcion{
+        display: block;
+        opacity:0.1;
+        transition: all 450 ms;
+    }
+    .descripcion:hover{
+        opacity:1;
+    }
+    article{
+        
+        transition:all 450ms;
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .control{
+        width:70%;
+    }
+    /*Esto es lo viejo*/
+    
+}
+@media (min-width:768px){
+    .main-header-top-bar{
+        
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 30%;
+    }
+    .logo,
+    .search,
+    .copy-header{
+        max-width: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+    .search{
+        max-width: 145px;
+        align-items: center;
+    }
+
+    
+    .oculto{
+        display:block;
+    }
+    .tamañoimagen{
+        width: 300px;
+        
+    }
+    .contenedorArticulos{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .control{
+        width:40%;
+    }
+}
+@media (min-width:1024px){
+    .tamañoimagen{
+        width: 300px;
+    }
+    .footer{
+        display: flex;
+        padding: 20px;
+        
+    }
+    
+    .icono{
+        transition: all 450 ms;
+    }
+    .icono:hover{
+        color: #0022AA;
+    }
+}

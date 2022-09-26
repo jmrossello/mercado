@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img class="logo"src="/images/logo-mercado-liebre.svg" alt="logo">
+            <div class="search">
+                <form form action="/" method="POST">
+                    <input type="text" name="search" id="" placeholder="Buscar productos,marcas y más">
+                </form>
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div>
+                <h2 class="copy-header">
+                <i class="fa-sharp fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+                </h2>
+            </div>
+        </div>
+        <a href="#" class="hamburger-button">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="https://mercadoliebreboca.herokuapp.com/register">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="https://mercadoliebreboca.herokuapp.com/login">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                <li><a href="#">Mis Compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="secciones">
+        <form action="/" method="GET" class="create-form">
+            <div>
+                <input type="text" name="nombre" id="" placeholder="Nombre y Apellido"class="control">
+            </div>
+            <div>
+                <input type="text" name="usuario" id="" placeholder="Nombre de usuari@"class="control">
+            </div>
+            <div>
+                <input type="text" name="email" id="" placeholder="E-mail"class="control">
+            </div>
+            <div class="control-formulario">
+                <label for="fechaNacimiento" class="strong">Fecha de Nacimiento</label>
+                <input type="date" name="fechaNacimiento"class="control">
+            </div>
+            <div class="control-formulario">
+                <label for="domicilio" class="strong">Domicilio</label>
+                <input type="text" name="domicilio" id="" placeholder="Domicilio"class="control">
+            </div>
+            <div class="control-formulario">
+                <label for="perfil" class="strong">Perfil del Usuario</label>
+                <input type="radio" name="perfil" id="" value="Comprador">Comprador</input>
+                <input type="radio" name="perfil" id="" value="Vendedor">Vendedor</input>
+            </div>
+            <div class="control-formulario ">
+                <label for="intereses"class="strong">Intereses</label>
+                <div >
+                    <input type="checkbox" name="intereses" value="Electro" class="interes">Electro</input>
+                    <input type="checkbox" name="intereses" value="Moda" class="interes">Moda</input>
+                    <input type="checkbox" name="intereses" value="Hogar" class="interes">Hogar</input>
+                    <input type="checkbox" name="intereses" value="Jugueteria" class="interes">Juguetería</input>
+                    <input type="checkbox" name="intereses" value="Vida Sana" class="interes">Vida Sana</input>
+                </div>
+            </div>
+            <div class="control-formulario" >
+                <label class="strong">Seleccionar una imagen para el perfil:</label>
+                <input type="file" name="foto" accept=".jpg">
+            </div>
+            <div>
+                <input type="password" name="password" id="" placeholder="Contraseña"class="control">
+            </div>
+            <div>
+                <input type="password" name="password" id="" placeholder="Confirmar Contraseña"class="control">
+            </div>
+            <div>
+                <button type="submit" class="boton-formulario"><a href="https://mercadoliebreboca.herokuapp.com/"></a>Enviar</button>
+            </div>
+            <div>
+                <button type="reset" class="boton-formulario">Borrar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer">
+            <div>
+                <i class="fa-solid fa-credit-card icono"></i>
+                <h3>Pagá con tarjeta o efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-gift icono"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-shield icono"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </div>
+        </div>
+        <div>
+            <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/44cb4f9f6f.js" crossorigin="anonymous"></script>
+</body>
+</html>
